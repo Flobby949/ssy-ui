@@ -1,0 +1,15 @@
+/* 内容区 */
+
+.ssy-content {
+    box-sizing: border-box;
+    position: relative;
+    overflow-y: auto;
+}
+
+/* 根据header和navbar自适应内容区域高度 */
+.ssy-header~.ssy-content {
+    padding-top: 2.3rem;
+}
+.ssy-navbar~.ssy-content {
+    padding-bottom: 2.5rem;
+}
