@@ -1,0 +1,21 @@
+/* 项目公共样式文件 */
+
+/* 屏幕宽度在340px至410px之间 */
+html {
+    font-size: 20px;
+}
+
+/* 屏幕宽度小于340px */
+@media (max-width: 340px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+
+/* 屏幕宽度大于410px */
+@media (min-width: 410px) {
+    html {
+        font-size: 22px;
+    }
+}
