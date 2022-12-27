@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/ssy-ui.css">
+    <title>字体图标测试页面</title>
+</head>
+
+<body>
+    <i class="fa fa-address-book"></i>
+    <h2>更改图标样式：</h2>
+    <div>
+        <i class="fa fa-code"></i>
+        <i class="fa fa-info"></i>
+        <i class="fa fa-check"></i>
+    </div>
+    <style>
+        /* 变成红色 */
+        .fa-code {
+            color: red;
+        }
+        /* 变成实心圆形 */
+        .fa-info {
+            background: #666;
+            color: #fff;
+            border-radius: 50%;
+        }
+        /* 大图标 */
+        .fa-check {
+            display: block;
+            margin: 0 auto;
+            width: 6rem;
+            height: 6rem;
+            line-height: 6rem;
+            font-size: 3.5rem;
+            border-radius: 50%;
+            background: #09bb07;
+            color: #fff;
+        }
+    </style>
+    <h2>图标旋转(添加fa-spin标签)：</h2>
+    <div> 
+      <i class="fa fa-spinner"></i> 
+      <i class="fa fa-circle-o-notch"></i> 
+      <i class="fa fa-cube"></i>
+      <br/>
+      <i class="fa fa-spinner fa-spin"></i> 
+      <i class="fa fa-circle-o-notch fa-spin"></i> 
+      <i class="fa fa-cube fa-spin"></i>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+/* 字体图标库 */
+
+/* 
+    引入fontAwesome字体图标库 
+    具体图标class查询官网：https://fontawesome.dashgame.com/
+*/
+@import '//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css';
+
+.fa {
+    display: inline-block;
+    text-align: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+}
