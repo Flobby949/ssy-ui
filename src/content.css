@@ -13,3 +13,32 @@
 .ssy-navbar~.ssy-content {
     padding-bottom: 2.5rem;
 }
+
+/* 内容分區 -- Panel面板 */
+/* Panel標題 */
+.ssy-content .ssy-panel-title {
+    height: 1.8rem;
+    line-height: 1.8rem;
+    padding-left: 1rem;
+    color: #aaa;
+    background: #fff;
+    border-top: 1px solid #eee;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/* Panel内容 */
+.ssy-content .ssy-panel-body {
+    position: relative;
+    margin-bottom: .6rem;
+    padding: .6rem 1rem;
+    background: #fff;
+    overflow: hidden;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+/* 内容區域是否有内邊距 */
+.ssy-content .ssy-panel-body.no-padding {
+    padding: 0;
+}
