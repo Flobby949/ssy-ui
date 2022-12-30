@@ -16,3 +16,5 @@
 @import './button.css';
 /* 引入搜索栏的样式 */
 @import './search.css';
+/* 引入列表的样式 */ 
+@import './list.css'; 
