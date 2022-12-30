@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/ssy-ui.css">
+    <title>搜索框组件</title>
+</head>
+
+<body>
+    <div class="ssy-header">
+        <div class="left"><i class="fa fa-chevron-left"></i></div>
+        <div class="title">搜索框</div>
+        <div class="right"><i class="fa fa-ellipsis-h"></i></div>
+    </div>
+    <!-- 带suggest建议的搜索框 -->
+    <div class="ssy-content">
+        <!-- 搜索框 -->
+        <div class="ssy-search item-fixed">
+            <form action="#" class="ssy-search-form">
+                <div class="ssy-search-input-wrap">
+                    <i class="fa fa-search ssy-search-icon"></i>
+                    <input type="text" class="ssy-search-input" placeholder="搜索" autocomplete="off" required>
+                    <i class="fa fa-close ssy-search-clear"></i>
+                </div>
+                <span class="ssy-search-cancel">取消</span>
+            </form>
+            <!-- 搜索建议 -->
+            <ul class="ssy-search-suggest">
+                <li class="ssy-suggest-item">手机</li>
+                <li class="ssy-suggest-item">iPhone 14 Pro Max</li>
+                <li class="ssy-suggest-item">华为Mate 50</li>
+                <li class="ssy-suggest-item">小米13 Pro</li>
+                <li class="ssy-suggest-item">诺基亚1110</li>
+                <li class="ssy-suggest-item">手机</li>
+                <li class="ssy-suggest-item">iPhone 14 Pro Max</li>
+                <li class="ssy-suggest-item">华为Mate 50</li>
+                <li class="ssy-suggest-item">小米13 Pro</li>
+                <li class="ssy-suggest-item">诺基亚1110</li>
+            </ul>
+        </div>
+        <script>
+            window.onload = function () {
+                let ttSearch = document.querySelector('.ssy-search')
+                // 输入框被选中，进入搜索模式
+                document.querySelector('.ssy-search-input').addEventListener('focus', function () {
+                    ttSearch.classList.add('on-focus')
+                })
+                // 点击取消，返回正常模式
+                document.querySelector('.ssy-search-cancel').addEventListener('click', function () {
+                    ttSearch.classList.remove('on-focus')
+                })
+            }
+        </script>
+        <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum repudiandae officia, architecto perferendis facilis tenetur consequatur possimus officiis ab non incidunt quia itaque et doloremque quis magnam! Saepe, quis? Consequuntur ab sit placeat voluptatibus modi reprehenderit optio, incidunt obcaecati delectus ad cumque porro laudantium ullam quae! Aut expedita tenetur quidem, accusamus qui fugit consequatur impedit fuga possimus error excepturi, ipsum laboriosam, inventore unde quaerat aliquid laudantium natus ea totam non vitae maiores quis accusantium. Officiis doloremque veritatis sapiente, commodi nisi doloribus pariatur accusamus nam dignissimos voluptate quidem aspernatur obcaecati corporis facilis voluptas consectetur labore ad aperiam voluptatibus ut quod. Placeat recusandae aliquam dicta voluptatibus illo. Ratione, porro reiciendis! Enim ut recusandae deserunt corporis facilis impedit, quisquam consequuntur obcaecati veniam voluptate vero. Ullam sint ea quidem? Ratione explicabo quas aliquam nemo aliquid iure ex doloremque odit ducimus. Impedit dolore animi vero aperiam. Saepe odio eaque similique vel soluta in, impedit obcaecati?</p>
+    </div>
+</body>
+
+</html>
