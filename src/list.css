@@ -41,7 +41,7 @@ div {
     -webkit-box-orient: vertical;
 }
 
-/* 列表项的标题 */
+/* 标题 */
 .ssy-list .item-content-wrap>.item-title {
     height: 2rem;
     line-height: 1rem;
@@ -53,14 +53,14 @@ div {
     -webkit-box-orient: vertical;
 }
 
-/* 列表项的价格字段 */
+/* 价格 */
 .ssy-list .item-content-wrap>.item-price {
     font-size: .8rem;
     font-weight: 600;
     color: #e0652f;
 }
 
-/* 列表项的描述字段 */
+/* 描述 */
 .ssy-list .item-content-wrap>.item-desc {
     color: #999;
     font-size: .6rem;

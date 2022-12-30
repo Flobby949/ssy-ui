@@ -18,3 +18,5 @@
 @import './search.css';
 /* 引入列表的样式 */ 
 @import './list.css'; 
+/* 引入网格组件的样式 */ 
+@import './grid.css'; 
