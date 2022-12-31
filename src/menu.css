@@ -1,0 +1,81 @@
+/* 菜单组件样式 */
+
+/* 菜单项 */
+.ssy-menu>.ssy-menu-item {
+    display: flex;
+    height: 2.3rem;
+    padding: 0 1rem;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    font-size: .8rem;
+}
+
+/* 菜单名称 */
+.ssy-menu>.ssy-menu-item>.ssy-menu-name {
+    flex: 1;
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    color: #333;
+}
+
+/* 菜单信息 */
+.ssy-menu>.ssy-menu-item>.ssy-menu-value {
+    max-width: 5rem;
+    height: 1rem;
+    line-height: 1rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #999;
+}
+
+/* 下级操作引导图标 */
+.ssy-menu>.ssy-menu-item>.ssy-menu-icon {
+    margin-left: .3rem;
+    color: #999;
+}
+
+/* 切换开关 */
+.ssy-menu>.ssy-menu-item>.ssy-switch {
+    position: relative;
+    box-sizing: content-box;
+    width: 2.6rem;
+    height: 1.4rem;
+    border: 1px solid #ccc;
+    outline: 0;
+    border-radius: .75rem;
+    background-color: rgba(0,0,0,.1);
+    /* 过渡动画 */
+    transition: background-color .3s, border .3s;
+    /* 去掉webkit内核默认样式 */
+    -webkit-appearance: none;
+    /* 去掉webkit内核默认点击样式 */
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+/* 选中状态下，改变开关边框和背景色 */
+.ssy-menu>.ssy-menu-item>.ssy-switch:checked {
+    border-color: #07c160;
+    background-color: #07c160;
+}
+
+/* 使用::after伪元素实现圆形按钮样式 */
+.ssy-menu>.ssy-menu-item>.ssy-switch::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: .7rem;
+    background-color: #fff;
+    box-shadow: 0 0 2px #999;
+    /* 过渡动画 */
+    transition: left .3s;
+}
+
+/* 选中状态下，更改圆形按钮位置 */
+.ssy-menu>.ssy-menu-item>.ssy-switch:checked::after {
+    left: 1.2rem;
+}
