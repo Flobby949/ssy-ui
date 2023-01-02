@@ -5,7 +5,7 @@
     max-width: 640px;
     margin: 0 auto;
     background: #f8f8f8;
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
 }
 
@@ -17,6 +17,7 @@
 /* 获取焦点状态，覆盖内容区 */
 .ssy-search.on-focus {
     position: fixed;
+    z-index: 302;
     left: 0;
     right: 0;
     top: 0;

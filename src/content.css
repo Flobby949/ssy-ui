@@ -10,6 +10,7 @@
 .ssy-header~.ssy-content {
     padding-top: 2.3rem;
 }
+
 .ssy-navbar~.ssy-content {
     padding-bottom: 2.5rem;
 }
@@ -25,6 +26,13 @@
     border-top: 1px solid #eee;
     font-size: 14px;
     font-weight: normal;
+}
+
+/* 标题导航 */
+.ssy-content .ssy-panel-title>.ssy-panel-link {
+    float: right;
+    margin-right: 1rem;
+    color: #aaa;
 }
 
 /* Panel内容 */

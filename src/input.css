@@ -71,7 +71,7 @@
 .ssy-form-item>.ssy-radio {
     flex: 1;
     font-size: .8rem;
-    line-height: .8rem;
+    line-height: 2rem;
 }
 
 /* 未選擇狀態 */
