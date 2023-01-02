@@ -42,15 +42,14 @@
     padding: 0 .5rem;
     position: relative;
     top: -.7rem;
-    height: 1.5rem;
+    height: 1rem;
     line-height: 1rem;
     font-size: .7rem;
-    background: #f8f8f8;
+    background: #fff;
 }
 
 /* 单行加载提示组件的图标 */
 .ssy-loading-inline>.ssy-loading-info>.ssy-loading-icon {
-    font-size: .8rem !important;
     color: rgba(0, 0, 0, .2);
 }
 
