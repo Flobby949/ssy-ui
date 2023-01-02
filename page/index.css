@@ -35,3 +35,8 @@
   .page-index .ssy-grid>.ssy-grid-item.item-8>.ssy-grid-icon {
     color: #f3443c;
   }
+
+  /* 调整间距 */ 
+.page-index .yp-category{    
+  margin-bottom: .5rem;
+} 

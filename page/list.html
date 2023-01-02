@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../dist/ssy-ui.min.css">
+    <link rel="stylesheet" href="../src/ssy-ui.css">
     <link rel="stylesheet" href="./list.css">
     <title>发现</title>
 </head>
@@ -118,6 +118,19 @@
             </div>
         </div>
     </div>
+    <script>
+        window.onload = function () {
+            let ttSearch = document.querySelector('.ssy-search')
+            // 输入框被选中，进入搜索模式
+            document.querySelector('.ssy-search-input').addEventListener('focus', function () {
+                ttSearch.classList.add('on-focus')
+            })
+            // 点击取消，返回正常模式
+            document.querySelector('.ssy-search-cancel').addEventListener('click', function () {
+                ttSearch.classList.remove('on-focus')
+            })
+        }
+    </script>
 </body>
 
 </html>
