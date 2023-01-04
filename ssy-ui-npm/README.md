@@ -37,3 +37,6 @@ import 'ssy-ui';
 
 0.1.5
 - 【Bug Fix】loading 组件修改单行加载文字样式
+
+0.1.6
+- 【Bug Fix】修复Article组件中图片不居中的问题
